@@ -8,3 +8,162 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Roboto;
+  overflow-x: hidden;
+}
+
+header,
+nav {
+  background-color: #540b51;
+}
+
+/* Navigation Section */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav div {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  margin: 15px 20px;
+  padding-top: 10px;
+}
+nav div img {
+  height: 20px;
+}
+
+nav div:last-child {
+  gap: 20px;
+}
+
+nav div button {
+  background-color: transparent;
+  border: none;
+}
+
+ul {
+  display: none;
+}
+
+/* Header */
+
+header {
+  color: white;
+  text-align: center;
+}
+
+header div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 0.5rem;
+}
+
+h1 {
+  font-weight: bold;
+  margin: 1.5rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+p span {
+  color: #ecb12f;
+}
+
+.btn {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.7rem 0.7rem;
+  background-color: white;
+  text-transform: uppercase;
+  color: #540b51;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.btnGoogle {
+  background-color: #4285f4;
+  color: white;
+  display: flex;
+  /* flex-shrink: 1; */
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.3rem;
+  margin-bottom: 2rem;
+}
+
+/*! WTF IS THIS? Clarify tomorrow?!?!?*/
+
+.btnGoogle div {
+  width: 2rem;
+}
+
+.image {
+  height: 2rem;
+  padding: 0.2rem;
+  background-color: white;
+}
+.image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.heroImage {
+  height: 50vh;
+  width: 35%;
+  z-index: 2;
+}
+
+.heroImage img {
+  height: 300px;
+  width: auto;
+  position: relative;
+  z-index: 1;
+  left: 170px;
+  top: 0;
+}
+
+/* Main Section */
+
+.logoSection {
+  z-index: 10;
+  background-color: #f3eae2;
+  padding: 1rem;
+}
+
+main p {
+  font-weight: bold;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  margin: 1rem 1rem 0rem 1rem;
+}
+
+.divLogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.divLogo img {
+  height: 2rem;
+  margin-bottom: 1rem;
+}
